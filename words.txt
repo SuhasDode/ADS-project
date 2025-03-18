@@ -1,0 +1,12 @@
+apple
+application
+apricot
+banana
+bat
+batman
+cat
+car
+carbon
+dog
+door
+dove
