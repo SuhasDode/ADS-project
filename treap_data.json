@@ -1,43 +1,48 @@
 {
     "word": "door",
-    "priority": 5,
+    "priority": 9,
     "left": {
-        "word": "dog",
-        "priority": 3,
-        "left": {
-            "word": "apple",
-            "priority": 1,
-            "left": null,
-            "right": {
+        "word": "app",
+        "priority": 8,
+        "left": null,
+        "right": {
+            "word": "dog",
+            "priority": 7,
+            "left": {
                 "word": "application",
-                "priority": 1,
-                "left": null,
+                "priority": 6,
+                "left": {
+                    "word": "apple",
+                    "priority": 5,
+                    "left": null,
+                    "right": null
+                },
                 "right": {
                     "word": "apricot",
-                    "priority": 1,
+                    "priority": 5,
                     "left": null,
                     "right": {
                         "word": "banana",
-                        "priority": 1,
+                        "priority": 5,
                         "left": null,
                         "right": {
                             "word": "bat",
-                            "priority": 1,
+                            "priority": 5,
                             "left": null,
                             "right": {
                                 "word": "batman",
-                                "priority": 1,
+                                "priority": 5,
                                 "left": null,
                                 "right": {
                                     "word": "cat",
-                                    "priority": 1,
+                                    "priority": 5,
                                     "left": {
                                         "word": "car",
-                                        "priority": 1,
+                                        "priority": 5,
                                         "left": null,
                                         "right": {
                                             "word": "carbon",
-                                            "priority": 1,
+                                            "priority": 5,
                                             "left": null,
                                             "right": null
                                         }
@@ -48,13 +53,13 @@
                         }
                     }
                 }
-            }
-        },
-        "right": null
+            },
+            "right": null
+        }
     },
     "right": {
         "word": "dove",
-        "priority": 4,
+        "priority": 8,
         "left": null,
         "right": null
     }

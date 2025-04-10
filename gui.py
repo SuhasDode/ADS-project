@@ -1,5 +1,3 @@
-# gui.py
-
 import tkinter as tk
 from tkinter import messagebox, simpledialog
 from spell_checker import SpellChecker
@@ -26,6 +24,9 @@ class SpellCheckerGUI:
         self.suggest_btn.pack(pady=5)
 
         self.load_btn = tk.Button(master, text="Load Dictionary", command=self.load_words, width=20)
+        self.load_btn.pack(pady=5)
+
+        self.load_btn = tk.Button(master, text="Display Dictionary", command=self.display, width=20)
         self.load_btn.pack(pady=5)
 
         self.output = tk.Text(master, height=10, width=50, font=("Arial", 12))
@@ -67,6 +68,12 @@ class SpellCheckerGUI:
                     self.output.insert(tk.END, f"Loaded {len(word_list)} words from {file_path}\n")
             except FileNotFoundError:
                 messagebox.showerror("File Error", f"File not found: {file_path}")
+
+    def display(self):
+        words = self.checker.display_dictionary()
+        self.output.insert(tk.END,f"Dictionary - \n")
+        for word ,prio in words:
+            self.output.insert(tk.END,f"{word} - {prio}\n")
 
 def run_gui():
     root = tk.Tk()
