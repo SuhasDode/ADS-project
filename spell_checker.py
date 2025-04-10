@@ -26,8 +26,9 @@ class SpellChecker:
 
     def display_dictionary(self):
         entries = inorder(self.root)
-        for word, freq in entries:
-            print(f"{word} (used {freq} times)")
+        # for word, freq in entries:
+        #     print(f"{word} (used {freq} times)")
+        return entries
 
     def save(self):
         save_treap_to_file(self.root, self.save_file)

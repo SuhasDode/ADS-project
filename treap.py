@@ -1,5 +1,3 @@
-# treap.py
-
 class TreapNode:
     def __init__(self, word):
         self.word = word
@@ -41,7 +39,7 @@ def insert(root, word):
         root.right = insert(root.right, word)
         root = rebalance(root)
     else:
-        # Word already exists → increase priority
+        # Word already exists -> increase priority
         root.priority += 1
         root = rebalance(root)
 
